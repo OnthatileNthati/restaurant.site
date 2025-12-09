@@ -135,19 +135,6 @@ transition: 0.2s;
 background-color: #e04343;
 }
 
-.fade-in {
-animation: fadeIn 1.5s ease-in;
-opacity: 0;
-}
-
-@keyframes fadeIn {
-to {opacity: 1;}
-}
-
-@media (max-width: 600px) 
-.banner-text h1 {
-    font-size: 1.6rem;
-}
 
 .banner-text p {
     font-size: 0.9rem;
