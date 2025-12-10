@@ -84,6 +84,20 @@ margin:0 auto .4rem;}
 .cta{padding: .6rem .9rem; font-size: .95rem}
 
 
+@media (min-width: 900px;){
+.hero{
+background-image: url(images/logo2.png); /*make a wide banner image*/
+background-size: cover;             /*cover works for wide banners*/
+background-position: center center;
+min-height: 420px;           /*taller hero on desktop*/
+}
+ } 
+
+
+
+
+
+
 
 .menu{
 max-width: 600px;
