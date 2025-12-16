@@ -1,7 +1,7 @@
 body{
 margin: 0;
 font-family: Arial, sans-serif;
-background-color: #f7f7f7;
+background: color #f7f7f7;;
 }
 
 /*menu section*/
@@ -65,7 +65,7 @@ font-size: 1.1rem;
 }
 
 /*Inline hero text*/
-.hero .hero-text{
+.hero .hero-content{
 position: relative;
 z-index: 2;
 text-align: center;
@@ -76,7 +76,7 @@ padding: 0 14px;
 }
 
 /*typography*/
-.hero .hero-text h1{
+.hero .hero-content h1{
 margin: 0;
 font-weight: 700;
 font-size: 2rem;
@@ -84,11 +84,12 @@ line-height: 1.05;
 letter-spacing: 0.2px;
 }
 
-.hero .hero-text .tagline{
+.hero .hero-content .tagline{
 margin-top: 8px;
 font-size: 0.95rem;
 opacity: 0.95;
 }
+
 
 /*cta button*/
 .cta {
@@ -100,6 +101,49 @@ border-radius: 8px;
 text-decoration: none;
 font-weight: 700;
 }
+
+
+/*Buttons*/
+.cta{
+display: flex;
+gap: 15px;
+margin:20px auto;
+max-width: 320px;
+flex-direction: column;
+align-items: stretch;
+}
+
+.btn{
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 100%;
+min-height: 52px;
+
+padding: 14px;
+text-align: center;
+
+border-radius: 8px;
+background: #e05545;
+color: white;
+text-decoration: none;
+font-weight: 600;
+
+box-sizing: border-box;
+}
+
+/*menu button*/
+.btn.primary{
+background: #c0392b;
+color: #fff;
+}
+
+.btn.secondary{
+background: transparent;
+color: white;
+}
+
 
 
 /*CTA button*/
