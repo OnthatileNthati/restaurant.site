@@ -39,6 +39,10 @@ font-size: 1.1rem;
 
 /*HERO / COVER BANNER*/
 .hero{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
  position:relative;
  width: 100%;
  min-height: 280px;
@@ -46,11 +50,6 @@ font-size: 1.1rem;
  background-size: contain;
  background-position: center top;
  background-repeat:no-repeat;
- display: flex;
- align-items: center;
- justify-content: center;
- padding: 24px;
- box-sizing: border-box;
 }
 
 /*soft dark overlay*/
@@ -63,7 +62,7 @@ font-size: 1.1rem;
 }
 
 /*Inline hero text*/
-.hero .hero-content{
+.hero .hero-title{
 position: relative;
 z-index: 2;
 text-align: center;
@@ -74,7 +73,7 @@ padding: 0 14px;
 }
 
 /*typography*/
-.hero .hero-content h1{
+.hero .hero-title h1{
 margin: 0;
 font-weight: 700;
 font-size: 2rem;
@@ -82,12 +81,15 @@ line-height: 1.05;
 letter-spacing: 0.2px;
 }
 
-.hero .hero-content .tagline{
+.hero .hero-title .tagline{
 margin-top: 8px;
 font-size: 0.95rem;
 opacity: 0.95;
 }
 
+.hero-title{
+margin-bottom: 20px;    
+}
 
 /*cta button*/
 .cta {
@@ -148,7 +150,7 @@ background-size: cover;
 background-position: center;
 border-radius: 16px;
 padding: 25px;
-color: black;
+color: white;
 position: relative;
 margin-top: 20px;
 }
@@ -159,26 +161,22 @@ background-image: url(images/Pizza.jpg);
 }
 
 .burgers{
-background-image: url(images/Burger.jpg);    
+background-image: url(images/burger3.jpg);    
 }
 
 .chips{
-background-image: url(images/chips&sides.jpg);
+background-image: url(images/chips&side3.jpg);
 }
 
+.item{
+font-weight: 200; 
+color:white;
+}
 
 .menu-card:hover{
 transform: scale(1.02);
 transition: 0.3s ease;    
 }
-
-
-
-
-
-
-
-
 
 /*MEDIUM screens*/
 @media (min-width: 600px){
@@ -192,5 +190,4 @@ transition: 0.3s ease;
 .hero {min-height: 480px; }
 .hero .hero-text h1 {font-size: 3.2rem;}
 .hero .hero-text .tagline {font-size:}
-
 }
