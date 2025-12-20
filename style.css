@@ -66,6 +66,8 @@ text-align: center;
 /*Inline hero text*/
 .hero .hero-title{
 position: relative;
+top: 15px;
+left: none;
 z-index: 2;
 text-align: center;
 color: #111;
